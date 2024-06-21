@@ -16,13 +16,6 @@ import java.util.random.RandomGenerator;
 
 @Service
 public class AwsService {
-
-    String eu = "UNITED KINGDOM";
-    String af = "ETHIOPIA";
-    String us = "CALIFORNIA";
-    String la = "ARGENTINA";
-    String ai = "JAPAN";
-
     public ArrayList<Person> personData() {
 
         ArrayList<Person> person = new ArrayList<>();

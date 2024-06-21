@@ -19,13 +19,11 @@ public class AwsController {
 
     @GetMapping("/api")
     public Person getPersonDetailsById(@RequestParam int id){
-
         return awsService.getPersonDetailsById(id);
     }
 
     @GetMapping("/data")
     public Person getPersonDetailsByUuid(@RequestParam String name){
-
         return awsService.getPersonDetailsByName(name);
     }
 

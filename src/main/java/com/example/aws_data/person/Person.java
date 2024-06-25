@@ -18,18 +18,18 @@ public class Person {
     int personAge;
     String personAddress;
 
-    String personUUID;
+    //String personUUID;
 
-    LocalDateTime dateHired;
+    //LocalDateTime dateHired;
 
     long areaCode;
 
 
 
-    public LocalDateTime getDateHired() {
+   /* public LocalDateTime getDateHired() {
         LocalDateTime ldt = LocalDateTime.now().minusYears(5);
         return ldt;
-    }
+    }*/
 
     public long getAreaCode() {
         return areaCode;
@@ -39,10 +39,6 @@ public class Person {
         this.areaCode = areaCode;
     }
 
-    public void setDateHired(LocalDateTime dateHired) {
-
-        this.dateHired = dateHired;
-    }
 
     public Person() {
     }
@@ -80,24 +76,6 @@ public class Person {
 
     }
 
-    public String getPersonUUID() {
-        return personUUID;
-    }
-
-    public void setPersonUUID(String personUUID) {
-        this.personUUID = personUUID;
-    }
-
-    public Person(int personId, String personName, int personAge, String personAddress, String personUUID, LocalDateTime dateHired, long areaCode) {
-        this.personId = personId;
-        this.personName = personName;
-        this.personAge = personAge;
-        this.personAddress = personAddress;
-        this.personUUID = personUUID;
-        this.dateHired = dateHired;
-        this.areaCode = areaCode;
-    }
-
     @Override
     public String toString() {
         return "Person{" +
@@ -105,9 +83,15 @@ public class Person {
                 ", personName='" + personName + '\'' +
                 ", personAge=" + personAge +
                 ", personAddress='" + personAddress + '\'' +
-                ", personUUID='" + personUUID + '\'' +
-                ", dateHired=" + dateHired +
                 ", areaCode=" + areaCode +
                 '}';
+    }
+
+    public Person(int personId, String personName, int personAge, String personAddress, long areaCode) {
+        this.personId = personId;
+        this.personName = personName;
+        this.personAge = personAge;
+        this.personAddress = personAddress;
+        this.areaCode = areaCode;
     }
 }
